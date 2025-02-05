@@ -11,3 +11,8 @@ def contact(request):
 
 def show_task(request):
     return HttpResponse("<h1 style='color:red; text-align:center'>Welcome to the task page</h1>")
+
+def show_specific_task(request, id):
+    return HttpResponse("<h1 style='color:red; text-align:center'>Welcome to the specific task page</h1>")
+print("id",id)
+print("id type",type(id))
