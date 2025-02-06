@@ -26,6 +26,7 @@ def user_dashboard(request):
 
 def test(request):
     context={
-        "name":["Diya","Moni","Mashuka"]
+        "names":["Diya","Moni","Mashuka"],
+        "age":23
     }
     return render(request,"test.html",context)

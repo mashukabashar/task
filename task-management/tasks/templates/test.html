@@ -14,7 +14,23 @@
     <div>
         <p class="lal-bg">Task Management System</p>
         <img src="{% static "images/nature.jpg" %}">
-        {{name}}
+
+        {% comment %} {{name}} {% endcomment %}
+
+        <p class="lal-bg">{{age}}<p>
+
+        {% comment %} built in template tags with, ar total count dekhe rakhbo {% endcomment %}
+
+        {% for name in names %}
+
+         {% if not name == 'Diya' %}
+
+         <p>{{name}}</p> 
+          
+         {% endif %}
+        
+        {% endfor %}
+
     </div>
 </body>
 
